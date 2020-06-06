@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "DemoRazor";
+    var chuoi = "<span class= 'text-danger'>Nhat Nghe </span> ";
+}
+
+<h1>DemoRazor</h1>
+<div> HH @chuoi HH</div>
+<div> HH @Html.Raw(chuoi) HH</div>
+@foreach (var x in chuoi)
+{
+    @: var xyz = new Random()
+}
+@if (chuoi.Length > 10)
+{
+    <text>Do dai @chuoi.Length </text>
+}
+@if (chuoi.Length > 10)
+{
+    <div>Do dai @chuoi.Length </div>
+}
